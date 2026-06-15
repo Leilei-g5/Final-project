@@ -3,7 +3,7 @@ void intro() {
     // Tug of War
     fill(0);
     textSize(130);
-    text ("Tug Of War", 170, 400);
+    text ("Pull The Rope", 120, 400);
     //start buttom 
     tactileRect(380, 500, 240, 130);
     noFill(); 
