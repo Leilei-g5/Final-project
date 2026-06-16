@@ -19,24 +19,27 @@ final int PAUSE    = 3;
 final int GAMEOVER = 4; 
 
 //scoring 
-int leftscore, rightscore;
+int bluescore, redscore;
 int score;
 
-//entiti=y variable 
-float y;
+//entity variable 
+float centery;
 
 //keyboard variables 
-boolean upkey, downkey;
+boolean wkey, downkey;
 
 void setup() { 
   size(1000, 800); 
   mode = INTRO; 
   
   //target initialization
-  score = 0;
+  bluescore = redscore = 0;
   
   //initialize keyboard vars
-  upkey = downkey = false;
+  wkey = downkey = false;
+  
+  //initialize 
+  centery = 400;
 
   //Word Font 
   PFont myFont = loadFont("BerlinSansFBDemi-Bold-48.vlw"); 
